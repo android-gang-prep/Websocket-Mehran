@@ -56,7 +56,7 @@ public class RealEventTest {
     }
 
     @Test
-    public void sendAndReceiveMessageTest() throws InterruptedException {
+    public void receiveMessageTest() throws InterruptedException {
         CountDownLatch signal = new CountDownLatch(1);
         myRealEvent.connect(new EventSourceListener() {
             @Override
